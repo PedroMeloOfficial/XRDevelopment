@@ -7,6 +7,6 @@ public class Coin : MonoBehaviour
         // Play sound
         // play animation
         // destroy
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
