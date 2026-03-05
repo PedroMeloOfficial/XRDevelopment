@@ -20,8 +20,9 @@ public class Coin : MonoBehaviour
         Instantiate(feedback, transform.position, transform.rotation);
         _collider.enabled = false;
         _animator.SetTrigger("Collect");
+        Destroy(gameObject);
 
-        Invoke(nameof(DestroyOnAnimationComplete), _destroyTime);
+        // Invoke(nameof(DestroyOnAnimationComplete), _destroyTime);
     }
 
     private void DestroyOnAnimationComplete()
